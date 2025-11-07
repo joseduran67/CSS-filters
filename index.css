@@ -6,3 +6,42 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+
+#image1{
+    filter: grayscale(50%) opacity(50%);
+}
+#image2{
+    filter: blur(4px);
+    transition: 500ms;
+}
+#image2:hover{
+    filter: unset;
+}
+#image3{
+    filter: invert(60%);
+}
+#image4{
+    filter: hue-rotate(45deg);
+    animation: color-rotate 3s;
+    animation-timing-function: inf;
+}
+
+@keyframes color-rotate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+#div1{
+    background-color: orange;
+    color: aqua;
+    width: 200px;
+    height: 200px;
+    filter: blur(4px);
+}
+#div2{
+    font-size: 50px;
+    filter: drop-shadow(8px 8px 2px red);
+}
